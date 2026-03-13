@@ -1,4 +1,4 @@
-class point:
+class Point:
     """
     Simple class to represent a point in 2D space
     """
@@ -41,26 +41,24 @@ class point:
         """
         return self.distance_origin() < other.distance_origin()
 
-
-p1 = point(1,2)
-p2 = point(3,4)
-
-
-print(p1.x, p1.y)
-print(p2.x, p2.y)
-print(p1, p2)
-print(f"{p2} distance to origin is {p2.distance_origin()}")
-p3 = point(12,5)
-print(p3.x, p3.y)
-print(f"{p3} distance to origin is {p3.distance_origin()}")
-p1 = point(6,10)
-p2 = point(6,15)
-print(f"distance between {p1} and {p2} is {p1.distance_to(p2)}")
-p4 = point(1,1)
-points = [p1, p2, p3, p4, point(15,6)] #list of points
-print(points)
-points.sort()
-print(points)
+if __name__ == "__main__":
+    p1 = Point(1,2)
+    p2 = Point(3,4)
+    print(p1.x, p1.y)
+    print(p2.x, p2.y)
+    print(p1, p2)
+    print(f"{p2} distance to origin is {p2.distance_origin()}")
+    p3 = Point(12,5)
+    print(p3.x, p3.y)
+    print(f"{p3} distance to origin is {p3.distance_origin()}")
+    p1 = Point(6,10)
+    p2 = Point(6,15)
+    print(f"distance between {p1} and {p2} is {p1.distance_to(p2)}")
+    p4 = Point(1,1)
+    points = [p1, p2, p3, p4, Point(15,6)] #list of points
+    print(points)
+    points.sort()
+    print(points)
 
 
 
